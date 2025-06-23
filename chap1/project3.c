@@ -7,11 +7,11 @@ int main()
     srand(time(0));
     int player, computer = rand() % 3;
     /*
-        0 --> Snake
-        1 --> Water
-        2 --> Gun
+        0 --> ROCK
+        1 --> PAPER
+        2 --> SCISSOR
     */
-    printf("Choose 0 for Snake, 1 for water and 2 for Gun \n");
+    printf("Choose 0 for Rock, 1 for Paper and 2 for Scissor \n");
     scanf("%d", &player);
     printf("Computer chose %d\n", computer);
 
@@ -21,15 +21,15 @@ int main()
     }
     else if (player == 0 && computer == 1)
     {
-        printf("You Win!\n");
+        printf("You Lose!\n");
     }
     else if (player == 0 && computer == 2)
     {
-        printf("You Lose!\n");
+        printf("You Win!\n");
     }
     else if (player == 1 && computer == 0)
     {
-        printf("You Lose!\n");
+        printf("You Win!\n");
     }
     else if (player == 1 && computer == 1)
     {
@@ -37,15 +37,15 @@ int main()
     }
     else if (player == 1 && computer == 2)
     {
-        printf("You win!\n");
+        printf("You Lose!\n");
     }
     else if (player == 2 && computer == 0)
     {
-        printf("You win!\n");
+        printf("You Win!\n");
     }
     else if (player == 2 && computer == 1)
     {
-        printf("You Lose!\n");
+        printf("You Win!\n");
     }
     else if (player == 2 && computer == 2)
     {
